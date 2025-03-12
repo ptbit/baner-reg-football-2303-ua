@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let time = document.querySelector('.reg__time');
   let teams = document.querySelectorAll('.reg__team');
   let mid = document.querySelector('.footer__mid');
+  let before = document.querySelector('.footer__before');
   if (!/iPad|iPhone|iPod|Mac/.test(navigator.userAgent)) {
     date.classList.add('noios-padding');
     time.classList.add('noios-padding');
@@ -24,5 +25,6 @@ document.addEventListener('DOMContentLoaded', function () {
       team.classList.add('noios-padding');
     });
     mid.classList.add('noios-padding');
+    before.classList.add('noios-padding');
   }
 });
