@@ -126,13 +126,12 @@
   .reg
     &__players
       margin: 0 130px
+
+// 1440
 @media screen and (max-width: 1440px)
   .reg
     &__header, &__footer
       transform: scale(1)
-// 1440
-@media screen and (max-width: 1440px)
-  .reg
     &__header
       margin-top: 38px
     &__logo
@@ -217,4 +216,87 @@
     &__players
       bottom: 55px
       margin: 0 20px
-@media screen and (max-width: 1380px) and (max-height: 760px)
+@media screen and (max-width: 1380px) and (max-height: 750px)
+  .reg
+    &__header, &__footer
+      transform: scale(0.85)
+    &__players
+      margin: 0 40px
+@media screen and (max-width: 1380px) and (max-height: 705px)
+  .reg
+    &__header, &__when
+      margin-top: 15px
+@media screen and (max-width: 1380px) and (max-height: 680px)
+  .reg
+    &__players, &__footer
+      bottom: 35px
+@media screen and (max-width: 1380px) and (max-height: 665px)
+  .reg
+    &__players
+      margin: 0 60px
+    &__footer
+      bottom: 25px
+@media screen and (max-width: 1380px) and (max-height: 635px)
+  .reg
+    &__players
+      margin: 0 75px
+//1280
+@media screen and (max-width: 1280px)
+  .reg
+    &__header, &__footer
+      transform: scale(1)
+    &__header
+      margin-top: 50px
+    &__logo
+      width: 288px
+      height: 52px
+    &__when
+      margin-top: 38px
+      font-size: 16px
+      border-radius: 2.5px
+      border: 1px solid $pink
+    &__date
+      border-radius: 2.5px 0px 0px 2.5px
+    &__time
+      border-radius: 0px 2.5px 2.5px 0px
+    &__event
+      height: 40px
+      margin-top: 11px
+      font-size: 33px
+    &__team.noios-padding
+      padding: 5px 0 2px
+    &__vs
+      width: 33px
+    &__players
+      margin: 0 33.42px
+      bottom: 53.48px
+    &__footer
+      bottom: 55px
+  .footer
+    max-width: 520px
+    &__bonus
+      max-width: 406px
+    &__top
+      margin-bottom: 4.61px
+    &__mid
+      height: 76.5px
+      margin-bottom: 0
+      font-size: 64px
+      padding-right: 25px
+      padding-top: 3px
+      &::before
+        width: 49px
+        height: 43px
+    &__mid.noios-padding
+      padding: 9px 35px 0
+    &__before
+      font-size: 42px
+      line-height: 55px
+      padding-right: 4px
+    &__bot
+      font-size: 34px
+      letter-spacing: 0.34px
+      padding-right: 17px
+    &__text
+      text-align: left
+      letter-spacing: 0.07px
