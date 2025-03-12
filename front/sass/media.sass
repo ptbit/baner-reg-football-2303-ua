@@ -130,7 +130,8 @@
   .reg
     &__header, &__footer
       transform: scale(1)
-@media screen and (max-width: 1440px) and (max-height: 900px)
+// 1440
+@media screen and (max-width: 1440px)
   .reg
     &__header
       margin-top: 38px
@@ -168,7 +169,7 @@
       margin-bottom: 0
       font-size: 64px
       padding-right: 25px
-      padding-top: 9px
+      padding-top: 3px
       &::before
         width: 49px
         height: 43px
@@ -184,4 +185,34 @@
       text-align: left
       letter-spacing: 0.07px
 
-
+@media screen and (max-width: 1440px) and (max-height: 850px)
+  .reg
+    &__players
+      margin: 0 40px
+@media screen and (max-width: 1440px) and (max-height: 820px)
+  .reg
+    &__when, &__header
+      margin-top: 30px
+    &__players
+      margin: 0 60px
+      bottom: 55px
+    &__footer
+      bottom: 35px
+@media screen and (max-width: 1380px) and (max-height: 960px)
+  .reg
+    &__players
+      bottom: 85px
+      margin: 0 10px
+@media screen and (max-width: 1380px) and (max-height: 860px)
+  .reg
+    &__players
+      bottom: 55px
+      margin: 0 20px
+@media screen and (max-width: 1380px) and (max-height: 780px)
+  .reg
+    &__header, &__footer
+      transform: scale(0.9)
+    &__players
+      bottom: 55px
+      margin: 0 20px
+@media screen and (max-width: 1380px) and (max-height: 760px)
