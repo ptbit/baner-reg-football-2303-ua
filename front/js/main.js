@@ -12,10 +12,12 @@ window.addEventListener('orientationchange', () => {
 });
 
 // padding no-ios
-// document.addEventListener('DOMContentLoaded', function () {
-//   let pink = document.querySelector('.pink');
-//   if (!/iPad|iPhone|iPod|Mac/.test(navigator.userAgent)) {
-//     console.log('if');
-//     pink.classList.add('noios-padding');
-//   }
-// });
+document.addEventListener('DOMContentLoaded', function () {
+  let date = document.querySelector('.reg__date');
+  let time = document.querySelector('.reg__time');
+  if (!/iPad|iPhone|iPod|Mac/.test(navigator.userAgent)) {
+    console.log('if');
+    date.classList.add('noios-padding');
+    time.classList.add('noios-padding');
+  }
+});
