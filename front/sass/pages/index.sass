@@ -1,9 +1,10 @@
-$blue: #120451
+$blue: #005
 $white: #ffffff
+$grey: #E3E3E3
 $pink: #FF267E
 
-$font-suisse-intl-reg: SuisseIntl-Regular, sans-serif
-$font-suisse-intl-semib: SuisseIntl-SemiBold, sans-serif
+$font-suisse: SuisseIntl-Medium, sans-serif
+
 body
   background-color: grey // development
 .wrapper
@@ -26,27 +27,156 @@ body
 //   overflow: hidden
 // .noios-padding
 //   padding: 2px 10px 0
-// .wheel
-//   position: relative
-//   height: calc(var(--vh, 1vh) * 100)
-//   width: 100%
-//   overflow: hidden
-//   background: url("../img/bg-960.jpg") no-repeat 50% 50%/cover
-//   @media screen and (max-width: 1440px)
-//     background: url("../img/bg-720.jpg") no-repeat 50% 50%/cover
-//   @media screen and (max-width: 1280px)
-//     background: url("../img/bg-640.jpg") no-repeat 50% 50%/cover
-//   @media screen and (max-width: 1260px)
-//     background: url("../img/bg-512.jpg") no-repeat 50% 50%/cover
+.reg
+  position: relative
+  height: calc(var(--vh, 1vh) * 100)
+  width: 100%
+  overflow: hidden
+  background: url("../img/bg-960.jpg") no-repeat 50% 50%/cover
+  @media screen and (max-width: 1440px)
+    background: url("../img/bg-720.jpg") no-repeat 50% 50%/cover
+  @media screen and (max-width: 1280px)
+    background: url("../img/bg-640.jpg") no-repeat 50% 50%/cover
+  @media screen and (max-width: 1260px)
+    background: url("../img/bg-512.jpg") no-repeat 50% 50%/cover
 
-//   &__header
-//     margin-top: 60px
-//     position: relative
-//     z-index: 2
-//   &__logo
-//     width: 489px
-//     height: 88px
-//     margin: 0 auto
+  &__header
+    margin-top: 60px
+    display: flex
+    flex-direction: column
+    align-items: center
+    // border: 1px dashed red
+  &__logo
+    width: 489px
+    height: 89px
+    margin: 0 auto
+  &__when
+    margin-top: 53px
+    color: $grey
+    font-family: $font-suisse
+    font-size: 28px
+    letter-spacing: 0.28px
+    text-transform: uppercase
+    display: flex
+    border-radius: 4.794px
+    border: 1.918px solid $pink
+  &__date
+    padding: 11.51px 15.36px
+    background-color: $pink
+    border-radius: 4.794px 0px 0px 4.794px
+  &__time
+    padding: 11.51px 15.36px
+    background-color: $blue
+    border-radius: 0px 4.794px 4.794px 0px
+  &__event
+    height: 62px
+    margin-top: 20px
+    display: flex
+    color: $grey
+    background-color: $pink
+    font-size: 50px
+    text-transform: uppercase
+    font-family: $font-suisse
+    padding: 0 12.79px
+    gap: 10px
+  &__team
+    padding: 10px 0 0
+  &__vs
+    width: 53px
+  &__players
+    position: absolute
+    bottom: 106px
+    left: 38px
+    right: 38px
+    height: 605px
+  
+  &__footer
+    position: absolute
+    bottom: 65px
+    left: 0
+    right: 0
+    margin: 0 auto
+    // border: 1px dashed red
+
+  &__shadow
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    height: 410px
+    width: 100%
+    background: linear-gradient(180deg, rgba(106, 108, 143, 0.00) 0%, #111225 100%)
+
+
+.footer
+  max-width: 765px
+  &__bonus
+    max-width: 488px
+    color: $white
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    font-family: $font-suisse
+    font-size: 65px
+    font-weight: 500
+    line-height: 65px 
+    letter-spacing: 1.95px
+    text-transform: uppercase
+    margin: 0 auto
+  &__top
+    margin-bottom: 14.68px
+  &__mid
+    height: 98px
+    margin-bottom: 12.65px
+    background-color: $pink
+    font-size: 81px
+    line-height: 0
+    padding: 15px 35px 0
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 63px
+      height: 55px
+      background: url("../img/cup.svg") no-repeat 50% 50%/cover
+      left: 0
+      top: 50%
+      transform: translate(-50%, -50%)
+  &__before
+    font-size: 54px
+    line-height: 67.382px
+    align-self: flex-end
+    padding-right: 5px
+  &__bot
+    color: $white
+    text-align: right
+    font-family: $font-suisse
+    font-size: 44px
+    font-weight: 500
+    letter-spacing: 0.44px
+    text-transform: uppercase
+    padding-right: 22px
+  &__text
+    font-family: $font-suisse
+    font-size: 14px
+    line-height: 17px
+    text-align: justify
+    color: $white
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //   &__title
 //     margin-top: 78px
 //     color: $white
