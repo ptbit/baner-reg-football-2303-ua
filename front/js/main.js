@@ -15,9 +15,14 @@ window.addEventListener('orientationchange', () => {
 document.addEventListener('DOMContentLoaded', function () {
   let date = document.querySelector('.reg__date');
   let time = document.querySelector('.reg__time');
+  let teams = document.querySelectorAll('.reg__team');
+  let mid = document.querySelector('.footer__mid');
   if (!/iPad|iPhone|iPod|Mac/.test(navigator.userAgent)) {
-    console.log('if');
     date.classList.add('noios-padding');
     time.classList.add('noios-padding');
+    teams.forEach((team) => {
+      team.classList.add('noios-padding');
+    });
+    mid.classList.add('noios-padding');
   }
 });
